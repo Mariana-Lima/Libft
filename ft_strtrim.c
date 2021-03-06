@@ -24,7 +24,6 @@ char  *ft_substr(char const *s, unsigned int start, size_t len)
 		}
 		c++;
 	}
-    printf("sub: %s\n", substr);
 
 	return (substr);
 }
@@ -60,7 +59,6 @@ char	*ft_strtrim(char const *s1, char const *set)
     {
         len++;
     }
-   // printf("Teste %s, len: %d \n", &s1[len], len);
 
     while(s1[len2] != '\0')
         len2++;
@@ -70,7 +68,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
     while(len2 > len && compare(s1[len2], set))
         len2--;
-    //printf("Teste %s, len: %d\n", &s1[len2], len2); 
 
     return(ft_substr(s1, len, len2-len+1));
 }

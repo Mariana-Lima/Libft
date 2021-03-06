@@ -29,30 +29,30 @@ SRCS =			ft_atoi.c \
                 ft_strtrim.c \
                 ft_substr.c \
                 ft_tolower.c \
-                ft_toupper.c \
+                ft_toupper.c
 
-OBJS 	= ${SRCS:.c=.o}
+OBJS	= $(SRCS:.c=.o)
 
-CC 		= gcc
+CC		= gcc
 RM		= rm -f
 
 CFLAGS	= -Wall -Wextra -Werror
 
 .c.o:
-			${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
-${NAME}: 	${OBJS}
-			ar rc ${NAME} ${OBJS}
-			ranlib ${NAME}
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
-all:		${NAME} 
+all: $(NAME)
 
 clean:
-			${RM} ${OBJS}
+	$(RM) $(OBJS)
 
-fclean: 	clean
-			${RM} ${NAME}
+fclean: clean
+	$(RM) $(NAME)
 
-re:			fclean all
+re: fclean all
 
-.PHONY:		all clean fclean re
+.PHONY: all clean fclean re
