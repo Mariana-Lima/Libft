@@ -1,6 +1,5 @@
 #include "libft.h"
 
-
 void	ft_bzero(void *s, size_t n)
 {
 	char	*v;
@@ -12,5 +11,5 @@ void	ft_bzero(void *s, size_t n)
 		v++;
 		n--;
 	}
-  return ;
+	return ;
 }
