@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:30:05 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 02:37:21 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 13:51:01 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int					ft_strlcpy(char *dest, const char *src, int size)
 
 	resultado = 0;
 	c = 0;
+	if (size <= 0)
+		return (0);
 	while (size > 0 && src[c] != '\0')
 	{
 		dest[c] = src[c];
