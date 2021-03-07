@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:52:52 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 16:14:48 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 16:47:02 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int					ft_atoi(const char *str)
 	int				val;
 	unsigned int	add;
 	int				mult;
-	int 			isneg;
+	int			isneg;
 
 	add = 0;
 	mult = 1;

@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 23:06:44 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 15:40:45 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 16:48:09 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,8 @@ int					ft_strlcat(char *dest, const char *src, size_t size)
 	c_src = 0;
 	c_dest = ft_strlen(dest);
 	c_src = ft_strlen(src);
-
 	if (c_dest > size)
-		return(c_dest + size);
-
+		return (c_dest + size);
 	while (size > 0 && src[c] != '\0')
 	{
 		dest[c_dest + c] = src[c];

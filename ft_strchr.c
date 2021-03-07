@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 23:01:17 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 15:20:23 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 16:39:59 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char		*ft_strchr(const char *str, int c)
 	int		str_len;
 	int		cont;
 
-	string = (char*)str;
+	string = (char *)str;
 	str_len = ft_strlen(str);
 	cont = 0;
 	while (cont <= str_len)

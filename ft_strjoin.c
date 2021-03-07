@@ -6,19 +6,19 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 01:52:32 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 02:47:23 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 16:46:56 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
-	int	cs1;
-	int	cs2;
-	int	c;
-	char *dest;
-	int a;
+	int		cs1;
+	int		cs2;
+	int		c;
+	char	*dest;
+	int		a;
 
 	cs1 = 0;
 	cs2 = 0;

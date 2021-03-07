@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:17:21 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 14:58:29 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 16:29:32 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,10 @@ int					ft_memcmp(const char *s1, const char *s2, size_t n)
 	while (c < n)
 	{
 		if (str_1[c] != str_2[c])
+		{
 			return (str_1[c] - str_2[c]);
 			break ;
+		}
 		c++;
 	}
 	return (0);
