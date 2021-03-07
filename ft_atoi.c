@@ -6,13 +6,13 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:52:52 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 22:18:31 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 02:41:35 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_atoi(const char *str)
+int					ft_atoi(const char *str)
 {
 	int				len;
 	int				val;

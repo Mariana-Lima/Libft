@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putnbr.c                                           :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/22 21:04:32 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 12:23:22 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 03:00:56 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void	ft_putnbr(int nb)
+void			ft_putnbr(int nb)
 {
 	int			number[11];
 	long int	long_number;
@@ -39,24 +39,4 @@ void	ft_putnbr(int nb)
 		write(1, &number[c], 1);
 		c--;
 	}
-}
-
-#include <unistd.h>
-
-void    ft_putnbr(int nb);
-
-int        main(void)
-{
-    ft_putnbr(-2147483648);
-    write(1, "\n", 1);
-    ft_putnbr(0);
-    write(1, "\n", 1);
-    ft_putnbr(2147483647);
-    write(1, "\n", 1);
-
-	    ft_putnbr(42);
-    write(1, "\n", 1);
-
-	    ft_putnbr(-42);
-    write(1, "\n", 1);
 }

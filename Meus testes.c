@@ -212,3 +212,43 @@ int main(void){
     free(result);
 	return (0);
 }
+
+//memccpy
+
+int main()
+{
+  char src[20] = "Hello World";
+  char dst[20];
+  char	letra = (char)97;
+
+  memccpy(dst, src, letra, 4);
+  printf("Usando a função da biblioteca: \nDST = %s\n\n", dst);
+
+
+  ft_memccpy(dst, src, letra, 4);
+
+  printf("Usando a função criada: \nDST = %s\n", dst);
+	return (0);
+}
+
+//putnbr
+
+#include <unistd.h>
+
+void    ft_putnbr(int nb);
+
+int        main(void)
+{
+    ft_putnbr(-2147483648);
+    write(1, "\n", 1);
+    ft_putnbr(0);
+    write(1, "\n", 1);
+    ft_putnbr(2147483647);
+    write(1, "\n", 1);
+
+	    ft_putnbr(42);
+    write(1, "\n", 1);
+
+	    ft_putnbr(-42);
+    write(1, "\n", 1);
+}

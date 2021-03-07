@@ -1,15 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/07 02:04:46 by mmanoel-          #+#    #+#             */
+/*   Updated: 2021/03/07 02:54:40 by mmanoel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	c;
-	int			len;
+	int				len;
 	char			*new_str;
 
 	c = 0;
-  while(s[len] != '\0')
-	  len++;
+	while (s[len] != '\0')
+		len++;
 	new_str = (char *)malloc(sizeof(*s) * (len + 1));
+	new_str[c + 1] = '\0';
 	if (new_str == NULL || s == NULL)
 		return (NULL);
 	while (s[c] != '\0')
@@ -17,6 +30,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		new_str[c] = (*f)(c, s[c]);
 		c++;
 	}
-	new_str[c] = '\0';
 	return (new_str);
 }

@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 00:51:24 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 00:51:24 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 02:38:39 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	ft_putstr_fd(char const *s, int fd)
 
 	c = 0;
 	while (s[c] != '\0')
-    {
+	{
 		write(fd, &s[c], 1);
-        c++;
-    }
+		c++;
+	}
 }

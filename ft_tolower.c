@@ -1,17 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/07 02:23:29 by mmanoel-          #+#    #+#             */
+/*   Updated: 2021/03/07 03:26:48 by mmanoel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char	*ft_strlowcase(char *str)
+int	ft_tolower(int c)
 {
-	int c;
-
-	c = 0;
-	while (str[c] != '\0')
-	{
-		if (str[c] >= 'A' && str[c] <= 'Z')
-		{
-			str[c] = str[c] + 32;
-		}
-		c++;
-	}
-	return (str);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	else
+		return (c);
 }

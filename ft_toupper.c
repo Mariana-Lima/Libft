@@ -1,17 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/07 02:24:36 by mmanoel-          #+#    #+#             */
+/*   Updated: 2021/03/07 02:54:40 by mmanoel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char	*ft_strupcase(char *str)
+int	ft_toupper(int c)
 {
-	int c;
-
-	c = 0;
-	while (str[c] != '\0')
-	{
-		if (str[c] >= 'a' && str[c] <= 'z')
-		{
-			str[c] = str[c] - 32;
-		}
-		c++;
-	}
-	return (str);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
 }
