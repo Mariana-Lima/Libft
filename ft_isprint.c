@@ -1,24 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/06 22:41:45 by mmanoel-          #+#    #+#             */
+/*   Updated: 2021/03/06 22:43:38 by mmanoel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_isprint(char *str)
+int	ft_isprint(int c)
 {
-	int numero;
-
-	numero = 0;
-	if (*str > 0)
-	{
-		while (*str != '\0')
-		{
-			if (*str >= 32 && *str <= 126)
-				numero = 1;
-			else
-				return (0);
-			str++;
-		}
-	}
-	else
-	{
+	if (c >= 32 && c <= 126)
 		return (1);
-	}
-	return (numero);
+	else
+		return (0);
 }

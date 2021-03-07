@@ -1,28 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/06 22:34:38 by mmanoel-          #+#    #+#             */
+/*   Updated: 2021/03/06 22:35:39 by mmanoel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_str_is_alpha(char *str)
+int	ft_isalpha(int c)
 {
-	int numero;
-
-	numero = 0;
-	if (*str > 0)
-	{
-		while (*str != '\0')
-		{
-			if ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z'))
-			{
-				numero = 1;
-			}
-			else
-			{
-				return (0);
-			}
-			str++;
-		}
-	}
-	else
-	{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	}
-	return (numero);
+	else
+		return (0);
 }

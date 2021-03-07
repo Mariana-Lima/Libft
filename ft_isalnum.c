@@ -1,24 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/06 22:31:23 by mmanoel-          #+#    #+#             */
+/*   Updated: 2021/03/06 22:32:06 by mmanoel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_str_is_numeric(char *str)
+int	ft_isalnum(int c)
 {
-	int numero;
-
-	numero = 0;
-	if (*str > 0)
-	{
-		while (*str != '\0')
-		{
-			if (*str >= '0' && *str <= '9')
-				numero = 1;
-			else
-				return (0);
-			str++;
-		}
-	}
-	else
-	{
+	if (c >= '0' && c <= '9')
 		return (1);
-	}
-	return (numero);
+	else if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
