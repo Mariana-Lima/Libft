@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:30:05 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 15:32:25 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 17:17:16 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int					ft_strlcpy(char *dest, const char *src, int size)
 	resultado = 0;
 	c = 0;
 	src_len = ft_strlen(src);
-	if (dest == NULL || src_len > size)
+	if (dest == NULL)
 		return (0);
 	while (size > 0 && src[c] != '\0')
 	{
