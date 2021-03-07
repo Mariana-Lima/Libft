@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 22:44:10 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 02:13:29 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 14:45:20 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void				*ft_memchr(const void *s, int c, size_t n)
 	while (n > count)
 	{
 		if (*string == c)
-			return (string);
+			return ((void *)string);
 		else
 		{
 			string++;

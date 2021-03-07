@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:39:37 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 13:43:50 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 15:54:43 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,18 @@
 void		*ft_calloc(size_t count, size_t size)
 {
 	char	*v;
+	int		cont_v;
+	int		cont_aux;
 
 	v = (void *)malloc(count * size);
+	cont_v = 0;
+	cont_aux = count * size;
 	if (v == NULL)
 		return (NULL);
-	while (size > 0)
+	while (cont_aux > cont_v)
 	{
-		*v = '\0';
-		v++;
-		size--;
+		v[cont_v] = '\0';
+		cont_v++;
 	}
 	return ((void *)v);
 }
