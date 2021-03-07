@@ -6,14 +6,13 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 15:12:44 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 19:02:57 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 19:23:58 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <strings.h>
@@ -25,10 +24,10 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_memcmp(const char *s1, const char *s2, size_t n);
-size_t		ft_strlcat(char *dest, const char *src, size_t size);
 int		ft_strlcpy(char *dest, const char *src, int size);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
-int	    ft_tolower(int c);
+int		ft_tolower(int c);
+int		ft_strlcpy(char *dest, const char *src, int size);
 
 char	*ft_itoa(int n);
 char	*ft_strchr(const char *str, int c);
@@ -51,5 +50,6 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 size_t ft_strlen(const char *str);
+size_t		ft_strlcat(char *dest, const char *src, size_t size);
 
 #endif
