@@ -6,24 +6,28 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:17:21 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 22:59:21 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 00:35:36 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(char *str1, char *str2, int n)
+int					ft_memcmp(const char *s1, const char *s2, size_t n)
 {
-	int c;
+	unsigned int	c;
+	unsigned char	*str_1;
+	unsigned char	*str_2;
 
 	c = 0;
+	str_1 = (unsigned char *)s1;
+	str_2 = (unsigned char *)s2;
+	if (n == 0)
+		return (0);
 	while (c < n)
 	{
-		if (str1[c] < str2[c])
-			return (-1);
-		else
-			return (1);
+		if (str_1[c] != str_2[c])
+			break ;
 		c++;
 	}
-	return (0);
+	return (str_1[c] - str_2[c]);
 }
