@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 15:12:44 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 19:23:58 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 19:41:41 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-size_t ft_strlen(const char *str);
-size_t		ft_strlcat(char *dest, const char *src, size_t size);
+size_t	ft_strlen(const char *str);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 #endif
