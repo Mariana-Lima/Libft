@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 23:01:17 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 23:51:46 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/07 11:24:51 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char		*ft_strchr(const char *str, int c)
 	char	*string;
 
 	string = (char*)str;
-	if ((*str == 0) || (c == 0))
+	if ((*str == '\0') || (c == 0))
 		return (NULL);
 	while (*string != '\0')
 	{
