@@ -6,52 +6,56 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/08 11:46:19 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/08 12:57:52 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/13 14:36:21 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			**ft_split(char const *s, char c)
+int			ft_cont(char const *s, char c)
 {
-	char	**resultado;
-	int		start;
-	int		end;
-	int	    i;
-	int		cont;
+	int		cont3;
+	int		i;
 
-	start = 0;
-	end = 0;
 	i = 0;
-	cont = 0;
-
+	cont3 = 0;
 	while (s[i] != '\0')
 	{
-		while (s[i] == c || (s[i] != c && s[i] != '\0')) //enquanto for igual incrementa i,
-                                            //  ou mesmo que seja diferente mas ainda não nulo
+		while (s[i] == c)
 			i++;
-		if (s[i] != '\0') //quando parar de ser igual, se ainda não for nulo, incrementa cont
-			cont++;
+		if (s[i] != '\0')
+			cont3++;
+		while (s[i] != c && s[i] != '\0')
+			i++;
 	}
-    i = 0;
+	return (cont3);
+}
 
-	if ((resultado = (char **)malloc(sizeof(char *) * (cont + 1))) == NULL)
+char		**ft_split(char const *s, char c)
+{
+	char	**matriz;
+	int		cont1;
+	int		cont2;
+	int		cont3;
+	int		i;
+
+	cont1 = 0;
+	cont2 = 0;
+	cont3 = ft_cont(s, c);
+	i = 0;
+	if (!(matriz = (char **)malloc(sizeof(char *) * (cont3 + 1))))
 		return (0);
-
-	while (i != cont)
+	while (i != cont3)
 	{
-		while (s[start] == c) //enquanto ainda estiver dentro do delimitador
-			start++;
-
-		end = start; // para iniciar de onde parou
-
-		while (s[end] != c && s[end] != '\0')
-			end--;
-
-		resultado[i] = ft_substr(s, start, (end - start)); // cria na posição i a string
+		while (s[cont1] == c)
+			cont1++;
+		cont2 = cont1;
+		while (s[cont2] != '\0' && s[cont2] != c)
+			cont2++;
+		matriz[i] = ft_substr(s, cont1, (cont2 - cont1));
+		cont1 = cont2;
 		i++;
-
-		start = 0;
 	}
-	return (resultado);
+	matriz[i] = NULL;
+	return (matriz);
 }
