@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 15:12:44 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/13 17:24:08 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/03/13 18:02:24 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <strings.h>
 
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
