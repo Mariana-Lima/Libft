@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/08 11:46:19 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/04/10 20:27:28 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:33:50 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	ft_cont(char const *s, char c)
 {
-	int	cont3;
-	int	i;
+	int		cont3;
+	int		i;
 
 	i = 0;
 	cont3 = 0;

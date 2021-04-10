@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:20:20 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/04/10 20:32:13 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:36:14 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	itoa_len(long num)
 {
-	size_t	len;
+	size_t		len;
 
 	len = 1;
 	if (num < 0)
