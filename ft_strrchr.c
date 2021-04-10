@@ -6,13 +6,13 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:05:41 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 18:45:15 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:40:24 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	char	*string;
 	int		cont;

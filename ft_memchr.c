@@ -6,16 +6,16 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 22:44:10 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/13 14:48:08 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:56:50 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const char		*string;
-	size_t			count;
+	const char	*string;
+	size_t		count;
 
 	string = (const char *)s;
 	count = 0;

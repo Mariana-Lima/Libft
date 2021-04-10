@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:20:20 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 20:45:59 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:11:52 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static size_t	itoa_len(long num)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*str;
 	long	num;
@@ -36,7 +36,8 @@ char			*ft_itoa(int n)
 
 	num = n;
 	len = itoa_len(num);
-	if ((str = (char *)malloc(sizeof(char) * len + 1)) == NULL)
+	str = (char *)malloc(sizeof(char) * len + 1);
+	if (str == NULL)
 		return (NULL);
 	str[len] = '\0';
 	i = 0;

@@ -6,13 +6,13 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:18:50 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 20:42:04 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:05:02 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	char	*dup;
 	int		c;

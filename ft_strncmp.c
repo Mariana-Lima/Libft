@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 18:41:52 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 20:25:32 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:00:16 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int c;
+	unsigned	int c;
 
 	c = 0;
 	if (n == 0 && c == n)

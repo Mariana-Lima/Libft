@@ -6,19 +6,19 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 18:52:34 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/13 15:39:53 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:45:08 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	num;
 
 	if (n < 0)
 	{
-		num = (unsigned int)-n;
+		num = (unsigned int) - n;
 		ft_putchar_fd('-', fd);
 	}
 	else

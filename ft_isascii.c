@@ -6,11 +6,11 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 22:37:09 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 22:37:14 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:47:24 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

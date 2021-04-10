@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:25:30 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/13 17:34:10 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:01:34 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ static int	compare(char s1, char const *set)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		len;
-	int		len2;
+	int	len;
+	int	len2;
 
 	len = 0;
 	len2 = 0;

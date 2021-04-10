@@ -6,13 +6,13 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 22:47:36 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 11:57:35 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:42:44 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*pt_src;
 	unsigned char	*pt_dest;

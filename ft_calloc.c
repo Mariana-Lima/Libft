@@ -6,13 +6,13 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:39:37 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/07 15:54:43 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:04:24 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	char	*v;
 	int		cont_v;

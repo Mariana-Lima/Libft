@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 19:50:51 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/06 20:10:56 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:59:15 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char *p;
+	char	*p;
 
 	p = (char *)s;
 	while (n > 0)

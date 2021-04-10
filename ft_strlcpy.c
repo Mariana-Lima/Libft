@@ -6,15 +6,15 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:30:05 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/03/13 14:43:44 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:41:44 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int					ft_strlcpy(char *dest, const char *src, int size)
+int	ft_strlcpy(char *dest, const char *src, int size)
 {
-	int				src_len;
+	int	src_len;
 
 	src_len = ft_strlen(src);
 	if (dest == NULL)
