@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 02:25:30 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/04/10 20:01:34 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:30:10 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	compare(char s1, char const *set)
 {
-	int		c;
+	int	c;
 
 	c = 0;
 	while (set[c] != '\0')

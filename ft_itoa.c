@@ -6,7 +6,7 @@
 /*   By: mmanoel- <mmanoel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 20:20:20 by mmanoel-          #+#    #+#             */
-/*   Updated: 2021/04/10 20:11:52 by mmanoel-         ###   ########.fr       */
+/*   Updated: 2021/04/10 20:32:13 by mmanoel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,10 @@ char	*ft_itoa(int n)
 		num = num * (-1);
 		i++;
 	}
-	while ((num / 10) > 0 && len > i)
+	while ((num / 10) > 0 && len-- >= i)
 	{
 		str[len - 1] = (num % 10) + '0';
 		num /= 10;
-		len--;
 	}
 	str[i] = (num % 10) + '0';
 	return (str);
